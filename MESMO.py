@@ -74,7 +74,6 @@ for l in range(total_iterations):
             Multiplemes[i].weigh_sampling()
         cheap_pareto_front=[]
         def CMO(xi):
-            global beta
             xi=np.asarray(xi)
             y=[Multiplemes[i].f_regression(xi)[0][0] for i in range(len(GPs))]
             return y
@@ -105,7 +104,7 @@ for l in range(total_iterations):
     sorted_indecies=np.argsort(y_tries)
     i=0
     x_best=x_tries[sorted_indecies[i]]
-    while (x_best in np.asarray(GPs[0].xValues)):
+    while (any((x_best == x).all() for x in GPs[0].xValues)):
         i=i+1
         x_best=x_tries[sorted_indecies[i]]
     y_best=y_tries[sorted_indecies[i]]

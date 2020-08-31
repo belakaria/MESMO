@@ -47,31 +47,3 @@ class GaussianProcess:
         if y_std==0:
             y_std=1
         return y_std
-    
-    
-
-#class GaussianProcess:
-#    def __init__(self, numFidelities, dim):
-#        self.dim = dim
-#        # Use an anisotropic kernel
-#        # (independent length scales for each dimension)
-#        sqrdExp =  RBF(length_scale=1)
-#        numHyperParams = self.dim + 1
-#        self.xValues = []
-#        self.yValues = []
-#        self.model = GaussianProcessRegressor(kernel=sqrdExp,n_restarts_optimizer=numHyperParams*10)
-#
-#
-#    def fitModel(self):
-#        self.model.fit(self.xValues, self.yValues)
-#
-#    def addSample(self, x, y, fidelity):
-#        data = np.append(x, fidelity)
-#        self.xValues.append(data)
-#        self.yValues.append(y)
-#
-#    def getPrediction(self, x, fidelity):
-#        self.fitModel()
-#        data = np.append(x,fidelity)
-#        mean, std = self.model.predict(data.reshape(1,-1),return_std=True)
-#        return mean, std
