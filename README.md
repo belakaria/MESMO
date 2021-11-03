@@ -15,6 +15,24 @@ The code is implemented in Python and requires the following packages:
 4. [pygmo](https://esa.github.io/pygmo2/install.html) 
 
 ### Citation
-If you use this code in your academic work please cite our Neurips 2019 paper: "Max-value Entropy Search for Multi-Objective Bayesian Optimization", Syrine Belakaria, Aryan Deshwal, Janardhan Rao Doppa.
+If you use this code in your academic work please cite our papers: 
 
+```bibtex
 
+@inproceedings{belakaria2019max,
+  title={Max-value entropy search for multi-objective bayesian optimization},
+  author={Belakaria, Syrine and Deshwal, Aryan},
+  booktitle={International Conference on Neural Information Processing Systems (NeurIPS)},
+  year={2019}
+}
+
+@article{belakaria2021output,
+  title={Output Space Entropy Search Framework for Multi-Objective Bayesian Optimization},
+  author={Belakaria, Syrine and Deshwal, Aryan and Doppa, Janardhan Rao},
+  journal={Journal of Artificial Intelligence Research},
+  volume={72},
+  pages={667-715},
+  year={2021}
+}
+
+````
