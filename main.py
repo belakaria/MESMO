@@ -28,9 +28,10 @@ intial_number = int(args[3])
 total_iterations = int(args[4])
 sample_number = int(args[5])
 paths = "."
-functions = get_benchmark_functions(function_names)
+np.random.seed(seed)
 
 ###################Sobol Sequence Initialisation and search bounds##########################
+
 bound = [0, 1]
 Fun_bounds = [bound] * d
 grid = sobol_seq.i4_sobol_generate(d, 1000, np.random.randint(0, 100))

@@ -27,7 +27,7 @@ pip install sobol_seq platypus-opt scikit-learn pygmo
 python main.py <function_names> <d> <seed> <initial_number> <total_iterations> <sample_number>
 ```
 
-Here's an example command you could run from bash, assuming your script is named `run_mesmo.py`:
+Here's an example command you could run from bash, assuming your script is named `main.py`:
 
 ```bash
 python main.py branin,Currin 2 0 5 100 10

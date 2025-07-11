@@ -4,12 +4,9 @@ Created on Mon Oct 29 14:34:01 2018
 
 @author: Syrine Belakaria
 """
-# import math
 import numpy as np
 from sklearn.gaussian_process import GaussianProcessRegressor
 from sklearn.gaussian_process.kernels import RBF
-
-# import logging
 
 
 class GaussianProcess:
